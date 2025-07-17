@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+body {
+    background-image:url('/Assets/speech-trans/bg1.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: #ffffff;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.box {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    border:0;
+    color: #000000;
+    outline: 0;
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    resize: none;
+    border-radius: 10px;
+}
+textarea ::placeholder {
+font-size: 200px;   
+}
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+}
+
+button {
+    border: 0ch;
+    outline: 0;
+    border-radius: 35px;
+    padding: 10px 30px;
+    background:white ;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    cursor: pointer;
+
+}
+i {
+    margin-right: 10px;
+    font-size:25px ;
+}
+
+select {
+    appearance: none;
+    flex: 1;
+    padding: 0 20px;
+    color: black;
+    background: url(/Assets/speech-trans/bxs-caret-down-circle.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 390px;
+    border-radius: 35px;
+    height: 35px;
+}
+@media (max-width: 768px) {
+    .box h1 {
+        font-size: 35px;
+    }
+
+    textarea {
+        width: 80%;
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .row {
+        width: 80%;
+        gap: 15px;
+    }
+
+    select {
+        background-position: 90%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .box h1 {
+        font-size: 25px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .row {
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 8px 14px;
+    }
+
+    select {
+        padding: 10px 60px;
+        background-position: 350px;
+    }
+}

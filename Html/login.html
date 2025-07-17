@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/favi2.png">
+    <link rel="stylesheet" href="/Styles/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form name="Form" onsubmit="form()">
+        <div class="input-box">
+            <P>
+                Name:
+            </P>
+            <input type="text" placeholder="Name" name="Name">
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            <P>
+                E-mail:
+            </P>
+            <input type="email" name="email" placeholder="blah@gmail.com">
+            <i class='bx bxs-envelope' ></i>
+        </div>
+        <div class="input-box">
+            <P>
+                Password:
+            </P>
+            <input type="password" placeholder="Password"  name="Password">
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        <button class="but">Login</button>
+    </form>
+        <div class="register-link">Don't have an account?<a href="/Html/signup.html">Signup</a></div>
+    </div>
+    <script src = "/Script/login.js"> </script>
+</body>
+</html>

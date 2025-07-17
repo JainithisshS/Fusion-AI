@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/trans.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/Assets/favi2.png">
+    <title>Fusion.T</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="nav-title">Fusion.T</h1>
+        <nav>
+            <a class="home" href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <h1 class="title">Translator</h1>
+    <div class="container">
+        <div class="translator">
+            <ul class="nuv_item">
+                <li>
+                    <select id="select-1"></select>
+                </li>
+                <li><i class='bx bx-right-arrow-alt'></i></li>
+                <li>
+                    <select id="select-2"></select>
+                </li>
+            </ul>
+            <div  class="write-box">
+                <div class="prop-from">
+                    <textarea  maxlength="500" class="fromtext" placeholder="write here.."></textarea>
+                </div>
+                <div class="prop-trans">
+                    <textarea class="toTranslate" placeholder="translation"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Script/languages.js"></script>
+    <script src="/Script/trans.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+h1 {
+    margin: 16px;
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+}
+
+.home{
+    color: white;
+}
+
+.title{
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/Assets/speech-trans/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.nav-title{
+    margin: 0 auto 0 0;
+    font-size: 25px;
+}
+
+.container {
+    width: 900px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 80px auto;
+}
+
+.translator {
+    border: none;
+    border-radius: 16px;
+}
+
+.nuv_item {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0 25px;
+}
+
+#select-1,#select-2{
+    border-style: none;
+    font-size: 16px;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+i{
+    font-size: 16px;
+}
+
+.write-box {
+    display: flex;
+    align-items: center;
+}
+
+.prop-from,.prop-trans{
+    width: 100%;
+}
+
+.fromtext,.toTranslate{
+    margin: 5px auto 0 30px;
+    outline: none;
+}
+
+.fromtext{
+    font-size: 15px;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 10px 50% 0 33px;
+    height: 250px;
+}
+
+.toTranslate{
+    font-size: 15px;
+    border: none;
+    resize: none;
+    height: 250px;
+    padding-left: 35px;
+}
+
+.fromtext{
+    border-right:1px solid black;
+}
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .write-box {
+        flex-direction: column;
+    }
+
+    .fromtext, .toTranslate {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        height: 200px;
+    }
+
+    .fromtext{
+        border-bottom:1px solid black;
+        border-right: none ;
+        width:100%;
+    }
+
+    .nuv_item {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nuv_item li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .nav-title {
+        font-size: 20px;
+    }
+}
